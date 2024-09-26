@@ -22,6 +22,7 @@ Preparing Job proposal draft using :-
 * Google web results top 3
 
 
+(Not A Requirement)
 
 * Keywords like reactjs, nodejs, python, python-visulization, data science, genAI, langchain, llamaindex,
 
