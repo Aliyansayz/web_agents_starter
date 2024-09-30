@@ -121,9 +121,10 @@ def generate_html(jobs_dict, job_type=""):
         job_description = job_info.get('description', 'No description available.')
         job_proposal = job_info.get('proposal', 'No proposal available.')
         job_title = job_info.get('title', 'N/A')
+        job_link =  job_info.get('url', 'N/A')
         job_items += f'''
             <div class="job">
-                <h2>{job_title}</h2>
+                <a href="{job_link}">{job_title}</a>
                 <div class="price"><strong>Price:</strong> {job_price}</div>
 
                 <button class="collapsible" onclick="toggleContent('{job_title}_desc')">Job Description</button>
