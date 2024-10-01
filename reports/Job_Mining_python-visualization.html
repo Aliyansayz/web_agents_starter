@@ -1,0 +1,373 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Job Mining Dashboard python-visualization </title><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+                    body {
+                        font-family: 'Raleway', sans-serif;
+                        color: #333;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    .container {
+                        width: 100%;
+                        max-width: 900px;
+                        margin: 20px auto;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+                    .header {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .header h1 {
+                        margin: 0;
+                        font-size: 28px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                    .job {
+                        background-color: #f9f9f9;
+                        margin-bottom: 15px;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                    .job h2 {
+                        margin: 0;
+                        font-size: 24px;
+                        color: #333;
+                    }
+                    .job .price {
+                        font-size: 18px;
+                        color: #007bff;
+                        margin-top: 10px;
+                    }
+                    .collapsible {
+                        background-color: #f1f1f1;
+                        color: #333;
+                        cursor: pointer;
+                        padding: 15px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        border-radius: 5px;
+                    }
+                    .content {
+                        padding: 15px;
+                        display: none;
+                        overflow: hidden;
+                        background-color: #f9f9f9;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                    .footer {
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        margin-top: 20px;
+                        border-top: 1px solid #ddd;
+                        padding-top: 10px;
+                    }
+                </style>
+                <script>
+                    function toggleContent(id) {
+                        var content = document.getElementById(id);
+                        if (content.style.display === "none") {
+                            content.style.display = "block";
+                        } else {
+                            content.style.display = "none";
+                        }
+                    }
+                </script>
+            </head><body>
+                <div class="container">
+                    <div class="header">
+                        <h1>Job Mining Dashboard python-visualization </h1>
+                    </div>
+    
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Make-com-span-class-highlight-Python-span-and-Airtable-Automation-Text-Table-Conversion-and-span-class-highlight-Visualization-span_~021840678795562929237/?referrer_url_path=/nx/search/jobs/">Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$100.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_desc')">Job Description</button>
+                <div class="content" id="Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_desc">Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)
+________________________________________
+
+Timeline: 2 days
+
+Only apply if you have experience with pythonanywhere, make.com and airtable
+
+Overview:
+Developer to automate the conversion of text data into structured tables and visualizations. The workflow will involve integrating Airtable, Make.com and PythonAnywhere to execute Python scripts that process text output (tables in markdown syntax) from a webhook. The final deliverables are:
+•	Tables saved as .csv files
+•	Visualizations saved as .png images
+
+Customization variables controlling the table's appearance, formatting, and file naming will be dynamically retrieved from Airtable via Make.com. All API keys required for the integration must be securely stored and accessed from the Airtable base.
+________________________________________
+
+Scope of Work:
+
+1.	Make.com Integration:
+o	API Setup:
+-	Create a Make.com scenario that sends text of a table in markdown syntax (dummy data) via API request
+-	Create a Make.com scenario that receives the text data from the webhook
+-	Configure the scenario to trigger the Python script hosted on PythonAnywhere.
+o	Data Handling:
+-	Ensure the .csv and .png files generated by the Python script are returned to Make.com for further processing and storage.
+o	Airtable Connection:
+-	Set up Make.com to pull dynamic variables from Airtable that control formatting, file naming, and securely retrieve all necessary API keys.
+
+2.	PythonAnywhere Scripting:
+o	Script Development:
+-	Write a Python script that:
+-	Converts input text into a structured table using pandas.
+-	Generates a visualization of the table using matplotlib and saves it as a .png file.
+-	Implement dynamic file naming for both .csv and .png files based on variables from Airtable.
+-	Securely access API keys from Airtable as needed.
+-	Track API costs and log into airtable
+
+o	Hosting and Execution:
+-	Host the script on PythonAnywhere and ensure it can be triggered remotely via Make.com.
+
+o	Error Handling and Logging:
+-	Include robust error handling to catch and log exceptions.
+-	Log key actions such as data received, files created, and formatting applied.
+-	Ensure that API keys are not exposed in logs or error messages.
+
+3.	Airtable Integration:
+o	Variable and Credential Management:
+-	Retrieve customization variables from Airtable for:
+-	Font size and style
+-	Cell background colors
+-	Borders and gridlines
+-	Text alignment
+-	Cell size and column/row spanning
+-	File naming conventions (e.g., timestamp, prefixes/suffixes)
+-	Securely retrieve all API keys required for Make.com, PythonAnywhere, and any other services involved in the workflow.
+
+o	Validation:
+-	Validate the retrieved variables to ensure they are correctly formatted and safe to use.
+-	Verify that the API keys are valid and have the necessary permissions.
+
+4.	Testing and Documentation:
+o	Testing:
+-	Thoroughly test the entire workflow using your own Make.com account and PythonAnywhere environment.
+-	Validate that the tables and visualizations are correctly generated and formatted.
+-	Test the secure retrieval and use of API keys from Airtable to ensure functionality and security.
+
+o	Documentation:
+-	Provide a Make.com scenario template with setup instructions.
+-	Document how to configure Airtable variables and how they affect the output.
+-	Include troubleshooting steps for common errors.
+-	Detail the process for securely storing and accessing API keys from Airtable.
+
+________________________________________
+Timeline:
+•	Project Duration: To be completed within three days from the start date.
+________________________________________
+How to Apply:
+Please provide the following - Experience Overview:
+o	A brief summary of your experience with similar integrations and projects.
+o	Specific examples or case studies where you've implemented comparable solutions.
+________________________________________
+Additional Information - Security:
+o	All API keys for Make.com, PythonAnywhere, and other services must be stored securely within the Airtable base.</div>
+
+                <button class="collapsible" onclick="toggleContent('Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_proposal')">Job Proposal</button>
+                <div class="content" id="Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Snowflake-Omni-span-class-highlight-visualization-span_~021840656775610602005/?referrer_url_path=/nx/search/jobs/">Snowflake to Omni visualization</a>
+                <div class="price"><strong>Price:</strong>  Hourly: $25.00 - $65.00 </div>
+
+                <button class="collapsible" onclick="toggleContent('Snowflake to Omni visualization_desc')">Job Description</button>
+                <div class="content" id="Snowflake to Omni visualization_desc">We are looking for a talented data engineer or team to work with. We have a client who’s looking for assistance with their Snowflake and Omni visualizations. We’d like to see some previous work with dashboarding. Particularly in the app space</div>
+
+                <button class="collapsible" onclick="toggleContent('Snowflake to Omni visualization_proposal')">Job Proposal</button>
+                <div class="content" id="Snowflake to Omni visualization_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Vox2vox-gan_~021840623512066328898/?referrer_url_path=/nx/search/jobs/">Vox2vox gan </a>
+                <div class="price"><strong>Price:</strong>  Hourly</div>
+
+                <button class="collapsible" onclick="toggleContent('Vox2vox gan _desc')">Job Description</button>
+                <div class="content" id="Vox2vox gan _desc">I need to modify the vox2vox GAN segmentation model, which is tailored for 4-channel MRI medical data, to fit my geomaterial CT scan data. My goal is to segment my samples into three classes: grain, void, and calcite. I also aim to enhance the segmentation performance as much as possible."
+
+Let me know if you need further informations!</div>
+
+                <button class="collapsible" onclick="toggleContent('Vox2vox gan _proposal')">Job Proposal</button>
+                <div class="content" id="Vox2vox gan _proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Web-Bot-Creator_~021840545300889929628/?referrer_url_path=/nx/search/jobs/">Web Bot Creator</a>
+                <div class="price"><strong>Price:</strong>  Hourly</div>
+
+                <button class="collapsible" onclick="toggleContent('Web Bot Creator_desc')">Job Description</button>
+                <div class="content" id="Web Bot Creator_desc">I am looking for someone to create a web bot that will text info me when job postings populate on a website in which I need to be logged into. The  job board in which the gigs are 1st come 1st serve and I'm trying to get ahead of the normal email updates which are already provided from said website.</div>
+
+                <button class="collapsible" onclick="toggleContent('Web Bot Creator_proposal')">Job Proposal</button>
+                <div class="content" id="Web Bot Creator_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Immediate-Temp-Contract-Powered-Data-Analysis_~021840540845612226737/?referrer_url_path=/nx/search/jobs/">Immediate Temp Contract - AI-Powered Data Analysis</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$300.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Immediate Temp Contract - AI-Powered Data Analysis_desc')">Job Description</button>
+                <div class="content" id="Immediate Temp Contract - AI-Powered Data Analysis_desc">We are seeking a talented developer to create an application that leverages AI to analyze uploaded datasets. The goal is to generate a comprehensive data narrative and produce visual insights that are easy to interpret. The ideal candidate will have experience in machine learning and data visualization techniques to ensure a user-friendly experience. This project will involve close collaboration to understand our specific data needs and deliver a robust solution.
+
+Must be familiar with LangChain, OpenAI API, Autogen, CrewAI, Python.
+
+The project will be need to be completed within 24 hours.</div>
+
+                <button class="collapsible" onclick="toggleContent('Immediate Temp Contract - AI-Powered Data Analysis_proposal')">Job Proposal</button>
+                <div class="content" id="Immediate Temp Contract - AI-Powered Data Analysis_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Developer_~021840535629277890460/?referrer_url_path=/nx/search/jobs/">AI Developer </a>
+                <div class="price"><strong>Price:</strong>  Hourly</div>
+
+                <button class="collapsible" onclick="toggleContent('AI Developer _desc')">Job Description</button>
+                <div class="content" id="AI Developer _desc">Job Description:
+We are seeking an experienced AI Developer with a focus on Large Language Models (LLMs) and AI-based image processing systems to help build a cutting-edge tool for creating dynamic, sports-related social media graphics. This tool will leverage LLMs and a provided library of creative graphic examples to intelligently design graphics based on raw photos uploaded by users, transforming them into professional-grade sports visuals.
+
+The ideal candidate will have experience working with LLM-based models and should be comfortable creating a system that can understand the style and aesthetic from a provided dataset, applying that knowledge to newly uploaded photos.
+
+Key Responsibilities:
+
+Build and Train an AI System: Create an AI tool using LLMs capable of transforming raw photos of athletes into highly stylized social media graphics, applying creative designs based on the company's extensive library of examples.
+
+Work with Provided Training Data: Use the company’s library of pre-designed sports-related images and graphics to train the LLM. Ensure the model learns to replicate and creatively adjust these styles to suit new user-submitted images.
+
+Design an Intuitive User Experience: Allow users to upload photos of themselves or athletes and have the LLM tool autonomously design personalized graphics based on the visual data and the training examples.
+
+Integrate Advanced Image Processing Techniques: Apply deep learning and AI-based image recognition methods to ensure the tool can understand and manipulate images, extracting athlete figures and creatively embedding them into complex design frameworks.
+
+Collaborate Across Teams: Work closely with designers, data scientists, and other AI developers to ensure the graphics generated meet the high aesthetic standards expected for social media sharing.
+
+Optimize and Scale the Tool: Ensure that the tool is computationally efficient, scalable, and able to handle high volumes of user uploads while maintaining design integrity.
+
+Qualifications:
+Experience with LLMs and AI Systems: Demonstrated experience in working with large language models and related AI systems, with a focus on image processing and graphic creation.
+
+Expertise in Deep Learning & Computer Vision: Experience with frameworks like PyTorch, TensorFlow, and OpenCV for training AI models on image data and applying design aesthetics.
+
+Graphic Design Integration: Familiarity with AI-driven design generation tools and the ability to integrate creative design patterns into AI workflows.
+
+Programming Skills: Proficiency in Python and relevant AI/ML libraries. Experience with APIs and cloud-based solutions for large-scale image processing.
+
+Understanding of Sports Media Aesthetics: The ability to create and train a system that understands the nuances of sports branding, social media trends, and how athletes should be presented visually.
+
+English Proficiency: Excellent verbal and written communication skills are mandatory.
+
+This is a highly challenging project.
+Expectations for this role are very high. The task requires building a sophisticated AI system that can not only recognize athletes in raw images but also apply the learned design principles from the provided creative library to produce new, high-quality graphics. This will involve pushing the boundaries of LLM capabilities to intelligently handle both image recognition and creative design generation.
+
+Those looking for an easy project should not apply. We are looking for a problem-solver who thrives on challenging, cutting-edge AI projects and can produce exceptional results.
+
+An example of a tool like this can be found here: https://replicate.com/blog/fine-tune-flux</div>
+
+                <button class="collapsible" onclick="toggleContent('AI Developer _proposal')">Job Proposal</button>
+                <div class="content" id="AI Developer _proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Generated-Short-Videos-from-Prompts-and-Images_~021840487957739976099/?referrer_url_path=/nx/search/jobs/">AI-Generated Short Videos from Prompts and Images</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$320.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('AI-Generated Short Videos from Prompts and Images_desc')">Job Description</button>
+                <div class="content" id="AI-Generated Short Videos from Prompts and Images_desc"># Job Description
+
+We are seeking a creative and technically skilled individual to generate short-form video ads (10-20 seconds) using AI. The videos will be created based on a prompt that describes the desired background effect, combined with a product image. The ideal candidate should use advanced AI techniques such as Stable Video Diffusion, Neural Style Transfer, or other innovative approaches to create unique and visually appealing videos.
+
+## Requirements:
+- Expertise in video generation using AI techniques like Stable Video Diffusion, Neural Style Transfer, etc.
+- Proficiency in Python for automating and implementing the video creation process.
+- Ability to generate unique and high-quality video outputs.
+- Experience with video editing tools or relevant Python libraries.
+- Ability to collaborate on version control by committing code to our GitHub repository.
+- Strong attention to detail, creativity, and an understanding of design aesthetics.
+
+## Deliverables:
+- 10-20 second short-form video ads based on the provided product image and descriptive prompts.
+- Python code that is committed to our GitHub repository.
+- Videos must meet the standards for uniqueness, creativity, and acceptance for ad use.
+
+## Timeline:
+- The project should be completed within two weeks from the start date.
+
+If you're excited about using AI to create innovative video content and meet the above requirements, we’d love to collaborate with you!</div>
+
+                <button class="collapsible" onclick="toggleContent('AI-Generated Short Videos from Prompts and Images_proposal')">Job Proposal</button>
+                <div class="content" id="AI-Generated Short Videos from Prompts and Images_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Developer-for-Custom-Image-Generation_~021840485984174003029/?referrer_url_path=/nx/search/jobs/">AI Developer for Custom Image Generation</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$100.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('AI Developer for Custom Image Generation_desc')">Job Description</button>
+                <div class="content" id="AI Developer for Custom Image Generation_desc">We are seeking a skilled AI Developer with expertise in computer vision, deep learning, and generative AI to create an image-generation system based on a custom dataset. The system should be able to generate and output two matching images (a roblox shirt and pants) every time a prompt is given, with the images representing complementary clothing sets.
+
+Dataset example will be given upon request.
+
+Key Responsibilities:
+Custom AI Development: Develop an AI model capable of generating two images (roblox shirt and pants) that match each other, based on prompts provided by the user.
+
+Prompt-based Generation: Implement a system where prompts are passed via a Python script, received through PHP (as the backend), and the AI model processes the prompt to generate matching images.
+
+Image Pair Output: Ensure that for every input prompt, two corresponding images (roblox shirt and pants) are generated and returned to the user.
+
+Model Training and Tuning: Fine-tune the model for performance, style matching, and accuracy to ensure the images generated are contextually appropriate and visually appealing.
+
+API Integration: Create a functional system where Python handles the AI image generation logic and communicates with PHP to receive user input and return the results.</div>
+
+                <button class="collapsible" onclick="toggleContent('AI Developer for Custom Image Generation_proposal')">Job Proposal</button>
+                <div class="content" id="AI Developer for Custom Image Generation_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Data-Analyst-amp-span-class-highlight-Visualization-span-Expert-Needed_~021840230680140331738/?referrer_url_path=/nx/search/jobs/">Data Analyst & Visualization Expert Needed</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$50.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Data Analyst & Visualization Expert Needed_desc')">Job Description</button>
+                <div class="content" id="Data Analyst & Visualization Expert Needed_desc">We are seeking a skilled Data Analyst and Visualization Expert to join our team. The ideal candidate will have experience in analyzing complex datasets and creating insightful visualizations that guide business decisions. You will work closely with our stakeholders to understand their data needs and deliver actionable insights through compelling dashboards and reports. Proficiency in tools like Tableau, Power BI, or similar is essential. If you are passionate about data and possess a keen eye for detail, we would love to hear from you.</div>
+
+                <button class="collapsible" onclick="toggleContent('Data Analyst & Visualization Expert Needed_proposal')">Job Proposal</button>
+                <div class="content" id="Data Analyst & Visualization Expert Needed_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Data-Extraction-from-Graph-365-Values-Needed_~021840216775164142062/?referrer_url_path=/nx/search/jobs/">Data Extraction from Graph - 365 Values Needed</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$5.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Data Extraction from Graph - 365 Values Needed_desc')">Job Description</button>
+                <div class="content" id="Data Extraction from Graph - 365 Values Needed_desc">We are seeking a detail-oriented freelancer to extract 365 data points from a JPG graph representing a year. The graph consists of 11 lines, each corresponding to a different year spanning a total of 11 years. Your task will be to carefully analyze the graph and accurately identify and record the values for each year. Precision is crucial, and familiarity with data extraction from visual formats is preferred. If you have experience with similar tasks and attention to detail, please apply!</div>
+
+                <button class="collapsible" onclick="toggleContent('Data Extraction from Graph - 365 Values Needed_proposal')">Job Proposal</button>
+                <div class="content" id="Data Extraction from Graph - 365 Values Needed_proposal"></div>
+            </div>
+        
+                <div class="footer">
+                    <p>&copy; 2024 Job Mining Dashboard. All rights reserved.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+    

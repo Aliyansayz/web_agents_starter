@@ -1,0 +1,442 @@
+
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Job Mining Dashboard python </title><style>
+                    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+                    body {
+                        font-family: 'Raleway', sans-serif;
+                        color: #333;
+                        margin: 0;
+                        padding: 0;
+                        background-color: #f4f4f4;
+                    }
+                    .container {
+                        width: 100%;
+                        max-width: 900px;
+                        margin: 20px auto;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+                    .header {
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .header h1 {
+                        margin: 0;
+                        font-size: 28px;
+                        color: #333;
+                        font-weight: 700;
+                    }
+                    .job {
+                        background-color: #f9f9f9;
+                        margin-bottom: 15px;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                    .job h2 {
+                        margin: 0;
+                        font-size: 24px;
+                        color: #333;
+                    }
+                    .job .price {
+                        font-size: 18px;
+                        color: #007bff;
+                        margin-top: 10px;
+                    }
+                    .collapsible {
+                        background-color: #f1f1f1;
+                        color: #333;
+                        cursor: pointer;
+                        padding: 15px;
+                        width: 100%;
+                        border: none;
+                        text-align: left;
+                        outline: none;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        border-radius: 5px;
+                    }
+                    .content {
+                        padding: 15px;
+                        display: none;
+                        overflow: hidden;
+                        background-color: #f9f9f9;
+                        margin-bottom: 10px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                    }
+                    .footer {
+                        text-align: center;
+                        font-size: 14px;
+                        color: #777;
+                        margin-top: 20px;
+                        border-top: 1px solid #ddd;
+                        padding-top: 10px;
+                    }
+                </style>
+                <script>
+                    function toggleContent(id) {
+                        var content = document.getElementById(id);
+                        if (content.style.display === "none") {
+                            content.style.display = "block";
+                        } else {
+                            content.style.display = "none";
+                        }
+                    }
+                </script>
+            </head><body>
+                <div class="container">
+                    <div class="header">
+                        <h1>Job Mining Dashboard python </h1>
+                    </div>
+    
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/openai-API-Excel_~021840683976648248405/?referrer_url_path=/nx/search/jobs/">openai API , Excel </a>
+                <div class="price"><strong>Price:</strong>  Hourly: $20.00 - $60.00 </div>
+
+                <button class="collapsible" onclick="toggleContent('openai API , Excel _desc')">Job Description</button>
+                <div class="content" id="openai API , Excel _desc">We are looking for a freelancer experienced in **Python scripting**, **AI-based text classification**, and **automation** to help us with the following tasks:
+Please see two attachment, excel sample of expenses and script to download excel,
+---
+
+### **1. Automate Excel Download and Login Process:**
+- **Task**: Write or modify an existing **Python script** (attached) that automatically logs in to the **credit card portal** daily, downloads the latest **credit card expense report** in Excel format, and saves it to a predefined folder.
+- **Key Requirements**:
+  - The script should work without manual intervention on a **daily basis** (e.g., using a cron job or task scheduler).
+  - In case of an error during login, downloading, or saving, the script must send an **error notification via email**. The error should be solvable using configurations from a **JSON file** (e.g., retry attempts, login credentials, file paths).
+  - The email notification must include specific information about the error (e.g., failed login attempt, download failure, or save error) for quick debugging.
+  
+---
+
+### **2. Categorize Expenses with AI**:
+- **Task**: Implement AI-based **text classification** to categorize any uncategorized expenses in the downloaded Excel report. For example, use AI to classify transactions based on their descriptions (e.g., identifying if they are groceries, entertainment, work-related, etc.).
+- **Key Requirements**:
+  - Use **AI models** or libraries to predict the category of any uncategorized expenses based on transaction descriptions.
+  - Ensure all expenses are **translated into English** if they are listed in a different language. This includes **categorized** and **uncategorized** expenses, so all data is uniform.
+  - Output the **categorized expenses** into the Excel file under the respective categories (e.g., Work-related, Groceries, Entertainment, etc.).
+  
+---
+
+### **3. Run AI Prompts Daily**:
+- **Task**: Set up a system that runs **AI prompts** daily based on the categorized Excel file. These prompts will provide insights into spending behavior, budget tracking, and recommendations (e.g., "You've spent 70% of your Dining Out budget; aim to limit spending today").
+- **Key Requirements**:
+  - The script should trigger AI prompts and send daily reports (via email or another method) based on the categorized expenses.
+  - Ensure the prompts address specific objectives such as daily spending alerts, recommendations, and expense forecasting (e.g., identifying trends and predicting over-budget categories).
+  - **Log errors** during the prompt execution process and notify the freelancer via email in case of issues, using details from a **JSON file** for troubleshooting.
+
+---
+
+### **Expected Deliverables**:
+1. A fully automated **Python script** that logs in daily to the credit card portal, downloads the latest expense report, categorizes the expenses using AI, translates the descriptions to English, and triggers AI prompts based on categorized data.
+2. **Error handling and email notifications** for any part of the process that fails.
+3. Documentation explaining the setup, configuration (including JSON file usage), and instructions for troubleshooting common errors.
+
+---
+
+### **Skills Required**:
+- Python (for automation and scripting)
+- Experience with **web scraping** or using **APIs** for login and downloading files
+- Knowledge of **AI-based text classification** (e.g., using models like GPT or natural language processing libraries)
+- Experience with **task scheduling** (e.g., cron jobs, task schedulers)
+- Familiarity with **Excel** handling in Python (e.g., using `pandas` or `openpyxl`)
+- Basic understanding of **JSON** for error handling and configuration
+
+---
+
+### **Timeline**:  
+We expect the tasks to be completed in 1-2 weeks. Continuous communication and status updates will be required to ensure smooth progress.
+
+If you're interested, please provide examples of similar projects or automations you’ve completed. Looking forward to collaborating!
+
+--- 
+
+This job description explains each of the tasks in detail and outlines the steps the freelancer needs to follow to ensure the project is successful. Let me know if you'd like any adjustments or additional information!</div>
+
+                <button class="collapsible" onclick="toggleContent('openai API , Excel _proposal')">Job Proposal</button>
+                <div class="content" id="openai API , Excel _proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Architectural-Help-Needed-for-Improving-Text-Accuracy-RAG-System_~021840682944972327234/?referrer_url_path=/nx/search/jobs/">Architectural Help Needed for Improving Text Accuracy in RAG System</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$300.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Architectural Help Needed for Improving Text Accuracy in RAG System_desc')">Job Description</button>
+                <div class="content" id="Architectural Help Needed for Improving Text Accuracy in RAG System_desc">I need architectural guidance to improve text accuracy in my Retrieval-Augmented Generation (RAG) system using OpenAI API and pgvector. The system struggles with PDFs containing both text and images, resulting in random images appearing in the text responses.
+
+Responsibilities:
+
+Recommend solutions to separate and handle text and images in the PDF processing pipeline.
+Advise on optimizing text embeddings and filtering out irrelevant image content.
+Help improve the overall system accuracy for complex PDFs.
+Skills Required:
+
+Experience with OpenAI API, pgvector, and embedding techniques.
+Expertise in RAG systems and PDF parsing.
+Ability to provide clear architectural recommendations for text and image accuracy.
+</div>
+
+                <button class="collapsible" onclick="toggleContent('Architectural Help Needed for Improving Text Accuracy in RAG System_proposal')">Job Proposal</button>
+                <div class="content" id="Architectural Help Needed for Improving Text Accuracy in RAG System_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Raspberry-Developer-for-Router-Setup-and-GNSS-Data-API-Consultancy_~021840682498360543132/?referrer_url_path=/nx/search/jobs/">Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$150.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy_desc')">Job Description</button>
+                <div class="content" id="Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy_desc">find more clear explanation: https://docs.google.com/document/d/1e2RsgA9B-tGP7poIZ8mC0S-t9_jKrgajHi6APlG0krU/edit?usp=sharing
+
+Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy
+
+Deadline: 4th October 2024
+
+We are looking for a skilled Raspberry Pi developer to assist with two tasks: setting up a Raspberry Pi Zero as a Wi-Fi router and providing consultancy on integrating GNSS data from a ZED-F9P module into an API. You will be collaborating with our Senior Software Engineer on this project, who has some experience in building APIs related to ZED-F9P or similar modules.
+
+Task 1: Set Up Raspberry Pi Zero with SIM7600G-H as a Wi-Fi Router
+Objective: Set up a Raspberry Pi Zero to act as a Wi-Fi router using the SIM7600G-H module for internet connectivity.
+Details:
+a. Physically connect the SIM7600G-H module to the Raspberry Pi Zero.
+b. Configure the SIM7600G-H to provide internet access via its 4G LTE connection.
+c. Set up the Raspberry Pi Zero as a Wi-Fi router with WPA2 security, allowing any device connected via Wi-Fi to access the internet through the SIM7600G-H’s connection.
+d. Ensure the Wi-Fi router functionality starts automatically after reboots.
+e. The use of DHCP or another IP configuration method is flexible; choose the one that best suits the use case.
+
+Task 2: Consultancy on Fetching GNSS Data from ZED-F9P and Exposing It Through API
+Objective: Provide consultation on how to retrieve high-precision GPS data from the ZED-F9P (EVK-F9P) module and make it accessible over Wi-Fi.
+Details:
+a. Guide us on how to automatically fetch GNSS data from the ZED-F9P module on boot using RTKLIB, U-Center, or similar tools to obtain precise GPS coordinates.
+b. Advise on setting up an API to expose the GNSS data as a continuous stream, so that devices connected to the Raspberry Pi via Wi-Fi can access the data in real-time.
+c. The API should allow any device connected to the Wi-Fi network to access the GNSS data without requiring authentication.
+d. Consultation Question: What data format do you recommend for exposing the GNSS data through the API? (e.g., raw NMEA strings, JSON with latitude/longitude, or another format?)
+
+Additional Information:
+You will be working alongside our Senior Software Engineer, who has some experience with APIs, particularly involving ZED-F9P or similar modules.
+We expect the solution for Task 1 to be delivered by October 4th, 2024.
+Please highlight any relevant experience you have working with Raspberry Pi, SIM7600G-H, ZED-F9P, or similar modules.
+Feel free to ask any clarifying questions before starting.
+
+</div>
+
+                <button class="collapsible" onclick="toggleContent('Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy_proposal')">Job Proposal</button>
+                <div class="content" id="Raspberry Pi Developer for Wi-Fi Router Setup and GNSS Data API Consultancy_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Web-platform-for-serving-PDFs-including-dashboard-for-data-updates_~021840680588309144046/?referrer_url_path=/nx/search/jobs/">Web platform for serving PDFs including dashboard for data updates</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$12,575.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Web platform for serving PDFs including dashboard for data updates_desc')">Job Description</button>
+                <div class="content" id="Web platform for serving PDFs including dashboard for data updates_desc">Build a report-generator and front-end to allow customers to retrieve reports onlline. 
+GOALS
+1. Developing the backend and front end of the platform.
+2. Deploying the platform using a cloud service with the highest levels of security to protect the
+database
+3. Delivering code along with documentation.
+4. Availability to update dataset using minor interaction with code (admin dashboard)
+Proposed Tech Stack
+1. Backend- Django, Postgres/PostGIS
+2. Frontend- ReactJS</div>
+
+                <button class="collapsible" onclick="toggleContent('Web platform for serving PDFs including dashboard for data updates_proposal')">Job Proposal</button>
+                <div class="content" id="Web platform for serving PDFs including dashboard for data updates_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Web-Scraping-Developer-for-Hotel-Price-Comparison-Tool_~021840680079513335714/?referrer_url_path=/nx/search/jobs/">Web Scraping Developer for Hotel Price Comparison Tool</a>
+                <div class="price"><strong>Price:</strong>  Hourly: $8.00 - $40.00 </div>
+
+                <button class="collapsible" onclick="toggleContent('Web Scraping Developer for Hotel Price Comparison Tool_desc')">Job Description</button>
+                <div class="content" id="Web Scraping Developer for Hotel Price Comparison Tool_desc">We are looking for an experienced developer to create a price-scraping feature for our hospitality management app. The feature will assist hotel sales departments by gathering and comparing competitors' room rates from various tourism and booking websites. The tool should account for multiple parameters such as date range, room type, and number of guests.
+Experience with web scraping, data parsing, and tourism site structures is essential. Please provide examples of similar projects.</div>
+
+                <button class="collapsible" onclick="toggleContent('Web Scraping Developer for Hotel Price Comparison Tool_proposal')">Job Proposal</button>
+                <div class="content" id="Web Scraping Developer for Hotel Price Comparison Tool_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Weekly-Report-Automation-using-Lambda-and-Metabase-Data_~021840679601163294398/?referrer_url_path=/nx/search/jobs/">Weekly Report Automation using Lambda and Metabase Data</a>
+                <div class="price"><strong>Price:</strong>  Hourly</div>
+
+                <button class="collapsible" onclick="toggleContent('Weekly Report Automation using Lambda and Metabase Data_desc')">Job Description</button>
+                <div class="content" id="Weekly Report Automation using Lambda and Metabase Data_desc">We are seeking a skilled freelancer to automate our weekly reporting process using AWS Lambda. The ideal candidate will be responsible for scraping data and generating graphs from our Metabase analytics platform. You will also need to send out a weekly report email based on a provided template. This project requires attention to detail and a strong understanding of data manipulation and email automation. If you have experience with AWS Lambda and data visualization, we want to hear from you!</div>
+
+                <button class="collapsible" onclick="toggleContent('Weekly Report Automation using Lambda and Metabase Data_proposal')">Job Proposal</button>
+                <div class="content" id="Weekly Report Automation using Lambda and Metabase Data_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Make-com-span-class-highlight-Python-span-and-Airtable-Automation-Text-Table-Conversion-and-Visualization_~021840678795562929237/?referrer_url_path=/nx/search/jobs/">Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$100.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_desc')">Job Description</button>
+                <div class="content" id="Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_desc">Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)
+________________________________________
+
+Timeline: 2 days
+
+Only apply if you have experience with pythonanywhere, make.com and airtable
+
+Overview:
+Developer to automate the conversion of text data into structured tables and visualizations. The workflow will involve integrating Airtable, Make.com and PythonAnywhere to execute Python scripts that process text output (tables in markdown syntax) from a webhook. The final deliverables are:
+•	Tables saved as .csv files
+•	Visualizations saved as .png images
+
+Customization variables controlling the table's appearance, formatting, and file naming will be dynamically retrieved from Airtable via Make.com. All API keys required for the integration must be securely stored and accessed from the Airtable base.
+________________________________________
+
+Scope of Work:
+
+1.	Make.com Integration:
+o	API Setup:
+-	Create a Make.com scenario that sends text of a table in markdown syntax (dummy data) via API request
+-	Create a Make.com scenario that receives the text data from the webhook
+-	Configure the scenario to trigger the Python script hosted on PythonAnywhere.
+o	Data Handling:
+-	Ensure the .csv and .png files generated by the Python script are returned to Make.com for further processing and storage.
+o	Airtable Connection:
+-	Set up Make.com to pull dynamic variables from Airtable that control formatting, file naming, and securely retrieve all necessary API keys.
+
+2.	PythonAnywhere Scripting:
+o	Script Development:
+-	Write a Python script that:
+-	Converts input text into a structured table using pandas.
+-	Generates a visualization of the table using matplotlib and saves it as a .png file.
+-	Implement dynamic file naming for both .csv and .png files based on variables from Airtable.
+-	Securely access API keys from Airtable as needed.
+-	Track API costs and log into airtable
+
+o	Hosting and Execution:
+-	Host the script on PythonAnywhere and ensure it can be triggered remotely via Make.com.
+
+o	Error Handling and Logging:
+-	Include robust error handling to catch and log exceptions.
+-	Log key actions such as data received, files created, and formatting applied.
+-	Ensure that API keys are not exposed in logs or error messages.
+
+3.	Airtable Integration:
+o	Variable and Credential Management:
+-	Retrieve customization variables from Airtable for:
+-	Font size and style
+-	Cell background colors
+-	Borders and gridlines
+-	Text alignment
+-	Cell size and column/row spanning
+-	File naming conventions (e.g., timestamp, prefixes/suffixes)
+-	Securely retrieve all API keys required for Make.com, PythonAnywhere, and any other services involved in the workflow.
+
+o	Validation:
+-	Validate the retrieved variables to ensure they are correctly formatted and safe to use.
+-	Verify that the API keys are valid and have the necessary permissions.
+
+4.	Testing and Documentation:
+o	Testing:
+-	Thoroughly test the entire workflow using your own Make.com account and PythonAnywhere environment.
+-	Validate that the tables and visualizations are correctly generated and formatted.
+-	Test the secure retrieval and use of API keys from Airtable to ensure functionality and security.
+
+o	Documentation:
+-	Provide a Make.com scenario template with setup instructions.
+-	Document how to configure Airtable variables and how they affect the output.
+-	Include troubleshooting steps for common errors.
+-	Detail the process for securely storing and accessing API keys from Airtable.
+
+________________________________________
+Timeline:
+•	Project Duration: To be completed within three days from the start date.
+________________________________________
+How to Apply:
+Please provide the following - Experience Overview:
+o	A brief summary of your experience with similar integrations and projects.
+o	Specific examples or case studies where you've implemented comparable solutions.
+________________________________________
+Additional Information - Security:
+o	All API keys for Make.com, PythonAnywhere, and other services must be stored securely within the Airtable base.</div>
+
+                <button class="collapsible" onclick="toggleContent('Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_proposal')">Job Proposal</button>
+                <div class="content" id="Make.com, Python and Airtable Automation (Text-to-Table Conversion and Visualization)_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Web-Scraping-Tool-Extract-Prices-from-Specific-URLs-Small-Scale_~021840677284783038958/?referrer_url_path=/nx/search/jobs/">Web Scraping Tool to Extract Prices from Specific URLs (Small Scale)</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$100.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Web Scraping Tool to Extract Prices from Specific URLs (Small Scale)_desc')">Job Description</button>
+                <div class="content" id="Web Scraping Tool to Extract Prices from Specific URLs (Small Scale)_desc">Description:
+I am looking for an experienced developer to create a web scraping tool that extracts prices from a list of around 150 URLs, with potential growth up to 300 URLs. The tool should be able to scrape pricing data every two weeks on demand, and export the results into a CSV/XLS file. We will provide the exact URLs and XPath (or CSS selectors) for the price element, along with the expected price.
+
+Key Features:
+Input:
+
+Ability to input the URL, product name, and price XPath for each product manually or through a file (CSV or similar).
+We will provide 2 sample URLs and XPaths to get started:
+Oryx evo D: https://wellworking.co.uk/accessories/laptop-stands/oryx-evo-d-laptop-stand/ with the price £58.32.
+AVE mouse: https://www.langstane.co.uk/ave-a-vei-ergonomic-wireless-2-4-ghz-mouse-st304020--1 with the price £59.50.
+Output:
+
+Export the scraped data into a CSV or Excel file with the following columns: Product Name, URL, Price, Date of Extraction.
+Prices should be cleaned (e.g., remove symbols like “£” and retain only the numerical value).
+Error Handling:
+
+Basic error handling: if a URL fails or the price cannot be found, the script should skip to the next one and report the issue without halting the process.
+Scalability:
+
+The tool does not need to be scalable beyond 300 URLs. However, adding new products/URLs should be manageable through a simple mechanism (e.g., adding to a list or file).
+Execution:
+
+The tool should allow for manual execution every two weeks. No need for complex scheduling integrations—just the ability to run the script when needed.
+Environment:
+
+No need for high-end infrastructure. The solution can run on a VPS (e.g., Hetzner), Google Colab, or even a local machine. We are flexible as long as the tool is functional.
+Proxy support is optional but should not add unnecessary complexity.
+What We Provide:
+A list of URLs and corresponding XPaths for price extraction.
+The exact prices we expect to scrape (to help you verify the output during development).
+Additional Notes:
+The system does not need to handle advanced error recovery (e.g., if the price element changes position on the website). We will manually update XPaths as needed.
+We are okay with providing the URLs and XPath manually if that helps reduce costs.
+Accepting the project will require that at least 85% of the provided URLs work correctly.
+Timeline:
+Expected delivery within 1-2 weeks.
+Budget:
+We are flexible but looking for competitive hourly rates ($5-10/hour). Please provide an estimate based on this scope.</div>
+
+                <button class="collapsible" onclick="toggleContent('Web Scraping Tool to Extract Prices from Specific URLs (Small Scale)_proposal')">Job Proposal</button>
+                <div class="content" id="Web Scraping Tool to Extract Prices from Specific URLs (Small Scale)_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Machine-Learning-Model-Development-for-Pattern-Recognition_~021840675559541019157/?referrer_url_path=/nx/search/jobs/">Machine Learning Model Development for Pattern Recognition</a>
+                <div class="price"><strong>Price:</strong> Est. budget:$50.00 Fixed price</div>
+
+                <button class="collapsible" onclick="toggleContent('Machine Learning Model Development for Pattern Recognition_desc')">Job Description</button>
+                <div class="content" id="Machine Learning Model Development for Pattern Recognition_desc">We are seeking a skilled freelancer to develop a machine learning model capable of recognizing simple patterns in data. The ideal candidate will have experience in data preprocessing, model selection, and evaluation. You will work with our team to understand the specific patterns we want to identify and implement algorithms that suit our requirements. Strong communication skills and the ability to explain complex concepts in simple terms are essential for this role.</div>
+
+                <button class="collapsible" onclick="toggleContent('Machine Learning Model Development for Pattern Recognition_proposal')">Job Proposal</button>
+                <div class="content" id="Machine Learning Model Development for Pattern Recognition_proposal"></div>
+            </div>
+        
+            <div class="job">
+                <a href="https://www.upwork.com/https://www.upwork.com//jobs/Mobile-App-Developer-for-Maize-Yield-Prediction_~021840674441638892373/?referrer_url_path=/nx/search/jobs/">Mobile App Developer for Maize Yield Prediction</a>
+                <div class="price"><strong>Price:</strong>  Hourly</div>
+
+                <button class="collapsible" onclick="toggleContent('Mobile App Developer for Maize Yield Prediction_desc')">Job Description</button>
+                <div class="content" id="Mobile App Developer for Maize Yield Prediction_desc">We are seeking a skilled mobile app developer to create a maize yield prediction application. The app should leverage data analytics and machine learning to provide accurate yield forecasts based on various agricultural inputs. The ideal candidate will have experience in developing mobile applications, a solid understanding of agricultural data, and a keen eye for user-friendly design. If you are passionate about technology and agriculture, we would love to hear from you.</div>
+
+                <button class="collapsible" onclick="toggleContent('Mobile App Developer for Maize Yield Prediction_proposal')">Job Proposal</button>
+                <div class="content" id="Mobile App Developer for Maize Yield Prediction_proposal"></div>
+            </div>
+        
+                <div class="footer">
+                    <p>&copy; 2024 Job Mining Dashboard. All rights reserved.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+    
