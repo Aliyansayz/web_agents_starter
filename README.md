@@ -1,5 +1,8 @@
 # web_agents_starter
 
+![Dashboard Sample](https://github.com/user-attachments/assets/f2162190-d35a-4865-bb23-13adaf7ee6a4)
+
+
 ![upwork_mining](https://github.com/user-attachments/assets/2d43f94c-40a0-4543-8a3c-64950dc97fa6)
 
 ## Upwork Agent 
