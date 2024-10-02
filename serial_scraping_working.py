@@ -16,7 +16,22 @@ keywords = ["reactjs", "python", "python-visualization", "python-database", "dja
 asyncio.run(scrape_keyword(keyword=keywords, multi_keyword=True))
 
 
+import re
 
+def filter_special_chars(input_string):
+    # Define a regex pattern for allowed characters (letters, numbers, spaces, common punctuation)
+    pattern = re.compile(r'[^a-zA-Z0-9\s,.!?\'"(){}[\]\-:;@&%#+/*|<>_=]')  # Add allowed special chars as needed
+    
+    # Substitute anything that doesn't match the allowed pattern with an empty string
+    filtered_string = pattern.sub('', input_string)
+    
+    return filtered_string
+
+# Test the function
+example_string = "(e.g., Express, Django, Ruby on Rails).\n✅Proficient"
+filtered_string = filter_special_chars(example_string)
+
+print("Filtered string:", filtered_string)
 
 def scrape_upwork_html(record_info, record_id, response):
     # Parse the page content
@@ -41,6 +56,10 @@ def scrape_upwork_html(record_info, record_id, response):
         # Print the job details
         title = job_link_title.text
 
+        title = filter_special_chars(title)
+        job_type = filter_special_chars(job_type)
+        job_value_str = filter_special_chars(job_value_str)
+        job_details = filter_special_chars(job_details)
 
         record_info[record_id] = {}
         record_info[record_id]["title"] = title
