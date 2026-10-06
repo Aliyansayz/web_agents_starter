@@ -17,7 +17,7 @@ python-dateutil==2.9.0.post0
 pytweening==1.2.0
 pytz==2024.2
 six==1.16.0
-soupsieve==2.6
+soupsieve==2.9
 typing_extensions==4.12.2
 tzdata==2024.1
 webencodings==0.5.1
